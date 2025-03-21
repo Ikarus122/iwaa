@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Driver xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" kukaVersion="1">
+  <Version Label="">
+    <Info Version="" />
+    <Schema Version="600" />
+  </Version>
+  <PROFINET PNIODeviceName="kuka" DeviceID="1024" />
+  <ControllerInstance Name="PNIO-CTRL" busTimeout="20000" busCycleTime="2">
+    <Device Name="abx-prt" ARUserID="2" InputDataLength="35" OutputDataLength="35" DiagnosticAlarmActive="false" IsActive="true" DeleteARPCache="false" />
+  </ControllerInstance>
+</Driver>

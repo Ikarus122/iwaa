@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SunriseIOGroupDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0">
+  <IOGroup DisplayName="MediaFlange" IconName="MediaFlange" SignalTypes="InOut" TemplateName="MediaFlange">
+    <IOs>
+      <DigitalIOItem Name="PinzaAbierta" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="VacioDesactivado" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="VacioOK" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="InputX3Pin3" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="InputX3Pin4" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="CerrarPinza" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="ActivarVacio" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="OutputX3Pin12" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="OutputX3Pin2" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="LEDBlue" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="UserButton" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="SwitchOffX3Voltage" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+    </IOs>
+    <Description>This I/O Group contains the In-/Outputs for the Multimedia Flange Touch Pneumatic.</Description>
+  </IOGroup>
+</SunriseIOGroupDescription>

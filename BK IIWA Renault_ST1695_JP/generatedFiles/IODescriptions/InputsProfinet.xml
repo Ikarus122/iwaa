@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Automatically generated IO group description. Please do NOT modify!
+-->
+<SunriseIOGroupDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0">
+  <IOGroup DisplayName="InputsProfinet" IconName="InputsProfinet" SignalTypes="InOut" TemplateName="InputsProfinet">
+    <IOs>
+      <DigitalIOItem Name="ReadyLinea" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Indica si la linea cumple las condiciones para trabajar</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="AutomaticoLinea" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Indica si el selector de la línea está en automático</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="LifeBit" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Bit de Vida del PLC para comprobar que no se pierde la comunicacion</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="CodMot" DataType="USINT" IOType="Input" UsedBitWidth="4" IsConnected="true">
+        <Description>Codigo del tipo de motor leido por el PLC</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="AppStart" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Inicia la aplicacion</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="AppEnable" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Habilita la ejecucion de la aplicacion</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="RbtPos1" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Se activa si el robot esta en la posicion 1 (trabajo)</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="RbtPos2" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Se activa si el robot esta en la posicion 2 (inhabilitado)</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="VacioOn" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Activa el vacio de la garra desde la pantalla</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="PinzaCerrar" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Cierra la pinza desde la pantalla</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="ErrorSonda" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Se activa si la sonda de nivel esta rota o da fallo</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="CodCon" DataType="USINT" IOType="Input" UsedBitWidth="2" IsConnected="true">
+        <Description>Codigo del tipo de conector especificado en pantalla</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Home" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Marca para indicar al robot que se mueva a Home</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="QuitarTapon" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Marca para indicar al robot que inicie la secuencia de quitar tapon</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="MedirVacio" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Marca para indicar al robot que inicie la secuencia de medir vacio</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="MedirNivel" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Marca para indicar al robot que inicie la secuencia de medir nivel</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="RobotInhibido" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Marca para indicar al robot que se mueva a la posicion de inhibido</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="VacioOff" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Desactiva el vacío de la garra desde la pantalla</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="PinzaAbrir" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Abre la pinza desde la pantalla</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Grados" DataType="INT" IOType="Input" UsedBitWidth="16" IsConnected="true">
+        <Description>Numero de grados para girar en la busqueda de la sonda de nivel</Description>
+      </DigitalIOItem>
+    </IOs>
+    <Description>Entradas de Profinet para comunicar con el PLC</Description>
+  </IOGroup>
+</SunriseIOGroupDescription>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IOManager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version Label="">
+    <Info Version="IOManager V0.1.0" />
+    <Schema Version="1" />
+  </Version>
+  <WarnMultipleUsageOfInputs printWarning="false" />
+  <BusList>
+    <Bus BusDriverName="ECatIODriver" BusInstanceName="SYS-X48">
+      <IOList>
+        <DigitalIO Name="MediaFlange.InputX3Pin3" Type="INPUT" Scope="USER_IO" StartBit="547" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="MediaFlange.InputX3Pin4" Type="INPUT" Scope="USER_IO" StartBit="548" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="MediaFlange.LEDBlue" Type="OUTPUT" Scope="USER_IO" StartBit="12922" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="MediaFlange.OutputX3Pin2" Type="OUTPUT" Scope="USER_IO" StartBit="12915" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="MediaFlange.OutputX3Pin12" Type="OUTPUT" Scope="USER_IO" StartBit="12914" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="MediaFlange.SwitchOffX3Voltage" Type="OUTPUT" Scope="USER_IO" StartBit="12926" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="MediaFlange.UserButton" Type="INPUT" Scope="USER_IO" StartBit="549" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="MediaFlange.ActivarVacio" Type="OUTPUT" Scope="USER_IO" StartBit="12913" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="MediaFlange.CerrarPinza" Type="OUTPUT" Scope="USER_IO" StartBit="12912" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="MediaFlange.PinzaAbierta" Type="INPUT" Scope="USER_IO" StartBit="544" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="MediaFlange.VacioDesactivado" Type="INPUT" Scope="USER_IO" StartBit="545" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="MediaFlange.VacioOK" Type="INPUT" Scope="USER_IO" StartBit="546" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+      </IOList>
+    </Bus>
+    <Bus BusDriverName="PNIODriver" BusInstanceName="PNIO-CTRL">
+      <IOList>
+        <DigitalIO Name="InputsProfinet.AppEnable" Type="INPUT" Scope="USER_IO" StartBit="16" BitSize="1" Signed="false">
+          <Description>Habilita la ejecucion de la aplicacion</Description>
+        </DigitalIO>
+        <DigitalIO Name="InputsProfinet.AppStart" Type="INPUT" Scope="USER_IO" StartBit="15" BitSize="1" Signed="false">
+          <Description>Inicia la aplicacion</Description>
+        </DigitalIO>
+        <DigitalIO Name="InputsProfinet.AutomaticoLinea" Type="INPUT" Scope="USER_IO" StartBit="9" BitSize="1" Signed="false">
+          <Description>Indica si el selector de la línea está en automático</Description>
+        </DigitalIO>
+        <DigitalIO Name="InputsProfinet.CodCon" Type="INPUT" Scope="USER_IO" StartBit="22" BitSize="2" Signed="false">
+          <Description>Codigo del tipo de conector especificado en pantalla</Description>
+        </DigitalIO>
+        <DigitalIO Name="InputsProfinet.CodMot" Type="INPUT" Scope="USER_IO" StartBit="11" BitSize="4" Signed="false">
+          <Description>Codigo del tipo de motor leido por el PLC</Description>
+        </DigitalIO>
+        <DigitalIO Name="InputsProfinet.ErrorSonda" Type="INPUT" Scope="USER_IO" StartBit="21" BitSize="1" Signed="false">
+          <Description>Se activa si la sonda de nivel esta rota o da fallo</Description>
+        </DigitalIO>
+        <DigitalIO Name="InputsProfinet.Grados" Type="INPUT" Scope="USER_IO" StartBit="56" BitSize="16" Signed="true">
+          <Description>Numero de grados para girar en la busqueda de la sonda de nivel</Description>
+        </DigitalIO>
+        <DigitalIO Name="InputsProfinet.Home" Type="INPUT" Scope="USER_IO" StartBit="32" BitSize="1" Signed="false">
+          <Description>Marca para indicar al robot que se mueva a Home</Description>
+        </DigitalIO>
+        <DigitalIO Name="InputsProfinet.LifeBit" Type="INPUT" Scope="USER_IO" StartBit="10" BitSize="1" Signed="false">
+          <Description>Bit de Vida del PLC para comprobar que no se pierde la comunicacion</Description>
+        </DigitalIO>
+        <DigitalIO Name="InputsProfinet.MedirNivel" Type="INPUT" Scope="USER_IO" StartBit="35" BitSize="1" Signed="false">
+          <Description>Marca para indicar al robot que inicie la secuencia de medir nivel</Description>
+        </DigitalIO>
+        <DigitalIO Name="InputsProfinet.MedirVacio" Type="INPUT" Scope="USER_IO" StartBit="34" BitSize="1" Signed="false">
+          <Description>Marca para indicar al robot que inicie la secuencia de medir vacio</Description>
+        </DigitalIO>
+        <DigitalIO Name="InputsProfinet.PinzaAbrir" Type="INPUT" Scope="USER_IO" StartBit="25" BitSize="1" Signed="false">
+          <Description>Abre la pinza desde la pantalla</Description>
+        </DigitalIO>
+        <DigitalIO Name="InputsProfinet.PinzaCerrar" Type="INPUT" Scope="USER_IO" StartBit="20" BitSize="1" Signed="false">
+          <Description>Cierra la pinza desde la pantalla</Description>
+        </DigitalIO>
+        <DigitalIO Name="InputsProfinet.QuitarTapon" Type="INPUT" Scope="USER_IO" StartBit="33" BitSize="1" Signed="false">
+          <Description>Marca para indicar al robot que inicie la secuencia de quitar tapon</Description>
+        </DigitalIO>
+        <DigitalIO Name="InputsProfinet.RbtPos1" Type="INPUT" Scope="USER_IO" StartBit="17" BitSize="1" Signed="false">
+          <Description>Se activa si el robot esta en la posicion 1 (trabajo)</Description>
+        </DigitalIO>
+        <DigitalIO Name="InputsProfinet.RbtPos2" Type="INPUT" Scope="USER_IO" StartBit="18" BitSize="1" Signed="false">
+          <Description>Se activa si el robot esta en la posicion 2 (inhabilitado)</Description>
+        </DigitalIO>
+        <DigitalIO Name="InputsProfinet.ReadyLinea" Type="INPUT" Scope="USER_IO" StartBit="8" BitSize="1" Signed="false">
+          <Description>Indica si la linea cumple las condiciones para trabajar</Description>
+        </DigitalIO>
+        <DigitalIO Name="InputsProfinet.RobotInhibido" Type="INPUT" Scope="USER_IO" StartBit="36" BitSize="1" Signed="false">
+          <Description>Marca para indicar al robot que se mueva a la posicion de inhibido</Description>
+        </DigitalIO>
+        <DigitalIO Name="InputsProfinet.VacioOff" Type="INPUT" Scope="USER_IO" StartBit="24" BitSize="1" Signed="false">
+          <Description>Desactiva el vacío de la garra desde la pantalla</Description>
+        </DigitalIO>
+        <DigitalIO Name="InputsProfinet.VacioOn" Type="INPUT" Scope="USER_IO" StartBit="19" BitSize="1" Signed="false">
+          <Description>Activa el vacio de la garra desde la pantalla</Description>
+        </DigitalIO>
+        <DigitalIO Name="OutputsProfinet.AutExtActive" Type="OUTPUT" Scope="USER_IO" StartBit="305" BitSize="1" Signed="false">
+          <Description>Indica que el robot esta listo para ser controlado por un PLC externo</Description>
+        </DigitalIO>
+        <DigitalIO Name="OutputsProfinet.AutExtAppReadyToStart" Type="OUTPUT" Scope="USER_IO" StartBit="306" BitSize="1" Signed="false">
+          <Description>Indica que la aplicacion esta lista para ser iniciada externamente</Description>
+        </DigitalIO>
+        <DigitalIO Name="OutputsProfinet.Aut" Type="OUTPUT" Scope="USER_IO" StartBit="304" BitSize="1" Signed="false">
+          <Description>Se activa si el robot esta en modo automatico</Description>
+        </DigitalIO>
+        <DigitalIO Name="OutputsProfinet.BusqCuadNoOK" Type="OUTPUT" Scope="USER_IO" StartBit="311" BitSize="1" Signed="false">
+          <Description>Se activa si no se ha podido encontrar la sonda de nivel con el conector cuadrado</Description>
+        </DigitalIO>
+        <DigitalIO Name="OutputsProfinet.CodError" Type="OUTPUT" Scope="USER_IO" StartBit="344" BitSize="16" Signed="true">
+          <Description>Codigo para indicar al PLC los errores que el robot tenga activos</Description>
+        </DigitalIO>
+        <DigitalIO Name="OutputsProfinet.CodigoError" Type="OUTPUT" Scope="USER_IO" StartBit="298" BitSize="5" Signed="false">
+          <Description>Para enviar distintos codigos de error segun el que se haya producido</Description>
+        </DigitalIO>
+        <DigitalIO Name="OutputsProfinet.DefaultAppError" Type="OUTPUT" Scope="USER_IO" StartBit="307" BitSize="1" Signed="false">
+          <Description>Se activa si hay algun error en la aplicacion principal</Description>
+        </DigitalIO>
+        <DigitalIO Name="OutputsProfinet.ErrorPrograma" Type="OUTPUT" Scope="USER_IO" StartBit="297" BitSize="1" Signed="false">
+          <Description>Indica si hay un fallo en el programa</Description>
+        </DigitalIO>
+        <DigitalIO Name="OutputsProfinet.LifeBit" Type="OUTPUT" Scope="USER_IO" StartBit="309" BitSize="1" Signed="false">
+          <Description>Bit de Vida del robot para comprobar que no se pierde la comunicacion</Description>
+        </DigitalIO>
+        <DigitalIO Name="OutputsProfinet.PosFinNivel" Type="OUTPUT" Scope="USER_IO" StartBit="323" BitSize="1" Signed="false">
+          <Description>Marca que indica que el robot ha salido de la posicion de medir nivel</Description>
+        </DigitalIO>
+        <DigitalIO Name="OutputsProfinet.PosHome" Type="OUTPUT" Scope="USER_IO" StartBit="320" BitSize="1" Signed="false">
+          <Description>Marca que indica que el robot esta en la posicion Home</Description>
+        </DigitalIO>
+        <DigitalIO Name="OutputsProfinet.PosInhibido" Type="OUTPUT" Scope="USER_IO" StartBit="324" BitSize="1" Signed="false">
+          <Description>Marca que indica que el robot esta en la posicion de inhibido</Description>
+        </DigitalIO>
+        <DigitalIO Name="OutputsProfinet.PosNivel" Type="OUTPUT" Scope="USER_IO" StartBit="322" BitSize="1" Signed="false">
+          <Description>Marca que indica que el robot esta en la posicion para medir nivel</Description>
+        </DigitalIO>
+        <DigitalIO Name="OutputsProfinet.PosVacio" Type="OUTPUT" Scope="USER_IO" StartBit="321" BitSize="1" Signed="false">
+          <Description>Marca que indica que el robot esta en la posicion para medir vacio</Description>
+        </DigitalIO>
+        <DigitalIO Name="OutputsProfinet.Ready" Type="OUTPUT" Scope="USER_IO" StartBit="296" BitSize="1" Signed="false">
+          <Description>Indica si el robot esta listo para moverse</Description>
+        </DigitalIO>
+        <DigitalIO Name="OutputsProfinet.Recovery" Type="OUTPUT" Scope="USER_IO" StartBit="313" BitSize="1" Signed="false">
+          <Description>Se activa si el robot ha sido movido manualmente y necesita reposicionar</Description>
+        </DigitalIO>
+        <DigitalIO Name="OutputsProfinet.ReposNoOK" Type="OUTPUT" Scope="USER_IO" StartBit="312" BitSize="1" Signed="false">
+          <Description>Se activa si el robot no esta en una posicion conocida para reposicionar hasta Home</Description>
+        </DigitalIO>
+        <DigitalIO Name="OutputsProfinet.StationError" Type="OUTPUT" Scope="USER_IO" StartBit="308" BitSize="1" Signed="false">
+          <Description>Se activa si hay algun error con la controladora o el robot</Description>
+        </DigitalIO>
+        <DigitalIO Name="OutputsProfinet.T1" Type="OUTPUT" Scope="USER_IO" StartBit="303" BitSize="1" Signed="false">
+          <Description>Se activa si el robot esta en modo manual</Description>
+        </DigitalIO>
+        <DigitalIO Name="OutputsProfinet.ZonaSeguraMotor" Type="OUTPUT" Scope="USER_IO" StartBit="310" BitSize="1" Signed="false">
+          <Description>Indica si el robot esta en una zona segura donde no puede ser golpeado por un motor</Description>
+        </DigitalIO>
+      </IOList>
+    </Bus>
+  </BusList>
+</IOManager>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SunriseIOGroupDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0">
+  <IOGroup DisplayName="OutputsProfinet" IconName="OutputsProfinet" SignalTypes="InOut" TemplateName="OutputsProfinet_tmp">
+    <IOs>
+      <DigitalIOItem Name="Ready" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Indica si el robot esta listo para moverse</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="ErrorPrograma" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Indica si hay un fallo en el programa</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="CodigoError" DataType="USINT" IOType="Output" UsedBitWidth="5" IsConnected="true">
+        <Description>Para enviar distintos codigos de error segun el que se haya producido</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="T1" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Se activa si el robot esta en modo manual</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Aut" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Se activa si el robot esta en modo automatico</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="AutExtActive" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Indica que el robot esta listo para ser controlado por un PLC externo</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="AutExtAppReadyToStart" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Indica que la aplicacion esta lista para ser iniciada externamente</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="DefaultAppError" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Se activa si hay algun error en la aplicacion principal</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="StationError" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Se activa si hay algun error con la controladora o el robot</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="LifeBit" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Bit de Vida del robot para comprobar que no se pierde la comunicacion</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="ZonaSeguraMotor" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Indica si el robot esta en una zona segura donde no puede ser golpeado por un motor</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="PosHome" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Marca que indica que el robot esta en la posicion Home</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="PosVacio" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Marca que indica que el robot esta en la posicion para medir vacio</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="PosNivel" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Marca que indica que el robot esta en la posicion para medir nivel</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="PosFinNivel" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Marca que indica que el robot ha salido de la posicion de medir nivel</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="PosInhibido" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Marca que indica que el robot esta en la posicion de inhibido</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="BusqCuadNoOK" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Se activa si no se ha podido encontrar la sonda de nivel con el conector cuadrado</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="ReposNoOK" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Se activa si el robot no esta en una posicion conocida para reposicionar hasta Home</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Recovery" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Se activa si el robot ha sido movido manualmente y necesita reposicionar</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="CodError" DataType="INT" IOType="Output" UsedBitWidth="16" IsConnected="true">
+        <Description>Codigo para indicar al PLC los errores que el robot tenga activos</Description>
+      </DigitalIOItem>
+    </IOs>
+    <Description>Salidas de Profinet para comunicar con el PLC</Description>
+  </IOGroup>
+</SunriseIOGroupDescription>
